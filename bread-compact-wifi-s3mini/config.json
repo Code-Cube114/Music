@@ -1,0 +1,9 @@
+{
+    "target": "esp32s3mini",
+    "builds": [
+        {
+            "name": "bread-compact-wifi-s3mini",
+            "sdkconfig_append": []
+        }
+    ]
+}

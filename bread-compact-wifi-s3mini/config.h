@@ -1,0 +1,35 @@
+#ifndef _BOARD_CONFIG_H_
+#define _BOARD_CONFIG_H_
+
+#include <driver/gpio.h>
+
+#define AUDIO_INPUT_SAMPLE_RATE  16000
+#define AUDIO_OUTPUT_SAMPLE_RATE 16000
+
+// 使用 Duplex I2S 模式
+
+#define AUDIO_I2S_GPIO_WS GPIO_NUM_9
+#define AUDIO_I2S_GPIO_BCLK GPIO_NUM_8
+#define AUDIO_I2S_GPIO_DIN  GPIO_NUM_6
+#define AUDIO_I2S_GPIO_DOUT GPIO_NUM_7
+
+
+#define BUILTIN_LED_GPIO        GPIO_NUM_21
+#define BOOT_BUTTON_GPIO        GPIO_NUM_0
+#define TOUCH_BUTTON_GPIO       NULL
+#define VOLUME_UP_BUTTON_GPIO   NULL
+#define VOLUME_DOWN_BUTTON_GPIO NULL
+
+#define DISPLAY_SDA_PIN GPIO_NUM_2
+#define DISPLAY_SCL_PIN GPIO_NUM_1
+#define DISPLAY_WIDTH   128
+#define DISPLAY_HEIGHT  32
+
+#define DISPLAY_MIRROR_X false
+#define DISPLAY_MIRROR_Y false
+
+
+// A MCP Test: Control a lamp
+#define LAMP_GPIO GPIO_NUM_18
+
+#endif // _BOARD_CONFIG_H_
